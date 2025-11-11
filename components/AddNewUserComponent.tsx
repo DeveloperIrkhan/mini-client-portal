@@ -95,7 +95,7 @@ const AddNewUserComponent = () => {
         <div className="flex w-full justify-end">
           <button
             type="submit"
-            className="shadow-lg w-1/4 hover:shadow-xl hover:text-white hover:border-white hover:bg-black hover:translate-y-1.5 hoverEffect bg-white text-black border border-black rounded-md px-4 py-1.5"
+            className="shadow-lg md:w-1/4 w-2/4 hover:shadow-xl hover:text-white hover:border-white hover:bg-black hover:translate-y-1.5 hoverEffect bg-white text-black border border-black rounded-md md:px-4 md:py-1.5 px-2 py-1"
           >
             {isLoading ? "Loading...." : "submit"}
           </button>
