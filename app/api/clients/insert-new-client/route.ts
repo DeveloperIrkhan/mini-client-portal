@@ -14,8 +14,7 @@ export const POST = async (req: NextRequest) => {
         const client = await clientModel.addClient({ name, email, businessName })
         const { data, error } = await EmailViaResend.emails.send({
             from: "hello@resend.dev",
-            // from: "Irfan Shah <dev.irfankhan.pk@outlook.com>",
-            to: email,
+            to: "programmer.irfansha@hotmail.com",
             subject: "Welcome to the Accountancy services Company",
             html: `<p>Hellow Mr:${name}, <br/>
             welcome to our Accountancy services company</p>`,

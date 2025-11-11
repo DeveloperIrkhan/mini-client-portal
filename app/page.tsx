@@ -26,7 +26,7 @@ export default function Home() {
         </p>
 
         <div className="flex items-center gap-x-6">
-          <Link href={"/client/add-new-client"} className="shadow-lg hover:shadow-xl hover:border-black hover:bg-white hover:text-black hover:translate-y-1.5 hoverEffect bg-black border border-white rounded-md px-4 py-1.5">
+          <Link href={"/client/add-new-client"} className="shadow-lg text-white hover:shadow-xl hover:border-black hover:bg-white hover:text-black hover:translate-y-1.5 hoverEffect bg-black border border-white rounded-md px-4 py-1.5">
             Add New Client
           </Link>
           <Link href={"/client/get-all-clients"} className="shadow-lg hover:shadow-xl hover:text-white hover:border-white hover:bg-black hover:translate-y-1.5 hoverEffect bg-white text-black border border-black rounded-md px-4 py-1.5">
