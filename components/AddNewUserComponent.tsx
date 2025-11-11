@@ -48,7 +48,7 @@ const AddNewUserComponent = () => {
       >
         <p className="text-lg text-black dark:text-white">Add New Client</p>
         <div className="flex w-full justify-between items-center flex-col md:flex-row md:gap-4 gap-1">
-          <label htmlFor="anme" className="text-black dark:text-white w-3/5">
+          <label htmlFor="anme" className="text-black dark:text-white  md:w-3/5 w-full">
             Client's Name
           </label>
           <input
@@ -58,11 +58,11 @@ const AddNewUserComponent = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="enter client name"
-            className="custom-input  md:w-full w-2/3"
+            className="custom-input w-full"
           />
         </div>
         <div className="flex w-full md:justify-between justify-center items-center flex-col md:flex-row md:gap-4 gap-1">
-          <label htmlFor="email" className="text-black dark:text-white w-3/5">
+          <label htmlFor="email" className="text-black dark:text-white md:w-3/5 w-full">
             Client's Email
           </label>
           <input
@@ -71,14 +71,14 @@ const AddNewUserComponent = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="custom-input  md:w-full w-2/3"
+            className="custom-input w-full"
             placeholder="enter client email"
           />
         </div>
         <div className="flex w-full justify-between items-center flex-col md:flex-row md:gap-4 gap-1">
           <label
             htmlFor="businessName"
-            className="text-black dark:text-white w-3/5"
+            className="text-black dark:text-white md:w-3/5 w-full"
           >
             Client's Business Name
           </label>
@@ -89,7 +89,7 @@ const AddNewUserComponent = () => {
             id="businessName"
             value={businessName}
             onChange={(e) => setBusinessName(e.target.value)}
-            className="custom-input  md:w-full w-2/3"
+            className="custom-input  w-full"
           />
         </div>
         <div className="flex w-full justify-end">
