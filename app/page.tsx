@@ -22,7 +22,7 @@ export default function Home() {
       </button>
       <div className="flex flex-col gap-y-10 border border-yellow-800 min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <p className="dark:text-white text-black md:text-2xl text-xl">
-          Welcome to the Client Services Company!
+          Welcome to the <span className="font-bold">Mini Client Portal</span>!
         </p>
 
         <div className="flex items-center gap-x-6">

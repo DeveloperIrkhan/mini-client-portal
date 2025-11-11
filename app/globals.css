@@ -53,7 +53,8 @@
     @apply transition-all duration-400 ease-in-out;
   }
   .custom-input {
-    @apply border px-1 py-1 text-black dark:text-white text-[15px] rounded-lg 
+    @apply border px-3 bg-white dark:bg-gray-600 py-1 text-black dark:text-white text-[15px] 
+    rounded-md 
     border-gray-400 dark:border-white focus:outline-none
      focus:border-gray-700;
   }

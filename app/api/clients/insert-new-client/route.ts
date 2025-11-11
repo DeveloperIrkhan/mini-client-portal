@@ -17,7 +17,7 @@ export const POST = async (req: NextRequest) => {
             to: "programmer.irfansha@hotmail.com",
             subject: "Welcome to the Accountancy services Company",
             html: `<p>Hellow Mr:${name}, <br/>
-            welcome to our Accountancy services company</p>`,
+            <b>welcome</b> to our Accountancy services company</p>`,
         })
         console.log("email sending data", { "data": data, error: error })
         return NextResponse.json({

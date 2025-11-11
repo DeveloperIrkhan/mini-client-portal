@@ -43,7 +43,7 @@ const AddNewUserComponent = () => {
       {isLoading && <LoadingScreen />}
       <form
         onSubmit={submitForm}
-        className="flex flex-col p-3 gap-4 justify-center items-center"
+        className="flex flex-col bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg p-5 gap-4 justify-center items-center"
       >
         <p className="text-lg text-black dark:text-white">Add New Client</p>
         <div className="flex w-full justify-between items-center flex-row gap-4">
@@ -71,16 +71,19 @@ const AddNewUserComponent = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="custom-input w-full"
-          placeholder="enter client email"
+            placeholder="enter client email"
           />
         </div>
         <div className="flex w-full justify-between items-center flex-row gap-4">
-          <label htmlFor="businessName" className="text-black dark:text-white w-3/5">
+          <label
+            htmlFor="businessName"
+            className="text-black dark:text-white w-3/5"
+          >
             Client's Business Name
           </label>
           <input
             type="text"
-            placeholder="Please enter Business name"
+            placeholder="enter Business name"
             required
             id="businessName"
             value={businessName}
@@ -88,12 +91,14 @@ const AddNewUserComponent = () => {
             className="custom-input w-full"
           />
         </div>
-        <button
-          type="submit"
-          className="shadow-lg w-1/2 hover:shadow-xl hover:text-white hover:border-white hover:bg-black hover:translate-y-1.5 hoverEffect bg-white text-black border border-black rounded-md px-4 py-1.5"
-        >
-          {isLoading ? "Loading...." : "submit"}
-        </button>
+        <div className="flex w-full justify-end">
+          <button
+            type="submit"
+            className="shadow-lg w-1/4 hover:shadow-xl hover:text-white hover:border-white hover:bg-black hover:translate-y-1.5 hoverEffect bg-white text-black border border-black rounded-md px-4 py-1.5"
+          >
+            {isLoading ? "Loading...." : "submit"}
+          </button>
+        </div>
       </form>
       {msg && <p className="mt-4">{msg}</p>}
     </div>
