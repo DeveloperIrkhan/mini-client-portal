@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const LoadingScreen = () => {
   return (
     <div
@@ -5,9 +7,10 @@ const LoadingScreen = () => {
                  bg-darkColor/70 backdrop-blur-sm"
     >
       <div className="flex flex-col justify-center relative items-center text-2xl">
-        <p className="text-black dark:text-white">
+        {/* <p className="text-black dark:text-white">
           Please Wait App is Loading....
-        </p>
+        </p> */}
+        <Image src={"/Spinner.svg"} alt="" width={69} height={69}/>
       </div>
     </div>
   );
