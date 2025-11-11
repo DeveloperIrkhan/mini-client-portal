@@ -39,14 +39,15 @@ const AddNewUserComponent = () => {
     }
   };
   return (
-    <div className="min-w-lg bg-white dark:bg-black rounded-md">
+    <div className="m-4 flex justify-center items-center w-full bg-white dark:bg-black rounded-md">
       {isLoading && <LoadingScreen />}
       <form
         onSubmit={submitForm}
-        className="flex flex-col bg-gray-200 dark:bg-gray-800 rounded-lg shadow-lg p-5 gap-4 justify-center items-center"
+        className="flex flex-col bg-gray-200 dark:bg-gray-800 rounded-lg 
+        shadow-xl p-5 gap-3 justify-center items-center max-w-lg md:max-w-lg w-full"
       >
         <p className="text-lg text-black dark:text-white">Add New Client</p>
-        <div className="flex w-full justify-between items-center flex-row gap-4">
+        <div className="flex w-full justify-between items-center flex-col md:flex-row md:gap-4 gap-1">
           <label htmlFor="anme" className="text-black dark:text-white w-3/5">
             Client's Name
           </label>
@@ -57,10 +58,10 @@ const AddNewUserComponent = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="enter client name"
-            className="custom-input w-full"
+            className="custom-input  md:w-full w-2/3"
           />
         </div>
-        <div className="flex w-full justify-between items-center flex-row gap-4">
+        <div className="flex w-full md:justify-between justify-center items-center flex-col md:flex-row md:gap-4 gap-1">
           <label htmlFor="email" className="text-black dark:text-white w-3/5">
             Client's Email
           </label>
@@ -70,11 +71,11 @@ const AddNewUserComponent = () => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="custom-input w-full"
+            className="custom-input  md:w-full w-2/3"
             placeholder="enter client email"
           />
         </div>
-        <div className="flex w-full justify-between items-center flex-row gap-4">
+        <div className="flex w-full justify-between items-center flex-col md:flex-row md:gap-4 gap-1">
           <label
             htmlFor="businessName"
             className="text-black dark:text-white w-3/5"
@@ -88,7 +89,7 @@ const AddNewUserComponent = () => {
             id="businessName"
             value={businessName}
             onChange={(e) => setBusinessName(e.target.value)}
-            className="custom-input w-full"
+            className="custom-input  md:w-full w-2/3"
           />
         </div>
         <div className="flex w-full justify-end">
